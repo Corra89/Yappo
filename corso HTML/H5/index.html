@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://172.16.3.250:8080/index.php" method="post" target="_blank" autocomplete="on">
+        <label style="text-align: center; display: block; font-size: larger;" for="username">Forum iscrizione ENGIM</label>
+        <br><br>
+        <input type="text" name="nome" id="nome" placeholder="Nome" maxlength="20" minlength="1" required>
+        <br><br>
+        <input type="text" name="cognome" id="cognome" placeholder="Cognome" maxlength="50" minlength="5" required>
+        <br><br>
+        <input type="mail" name="mail" id="mail" placeholder="example@mail.com" maxlength="50" minlength="5" required>
+        <br><br>
+        <input type="tel" name="telefono" id="telefono" placeholder="+39/......." maxlength="20" minlength="9" required>
+        <br><br>
+        <input type="date" name="data di nascita" id="data di nascita" placeholder="Data di nascita" required>
+        <br><br>
+        <input type="text" name="luogo di nascita" id="luogo di nascita" placeholder="Luogo di nascita" maxlength="50"
+            minlength="5" required>
+        <br><br>
+        <label for="corsi">Quale corso vorresti frequentare?</label>
+        <select id="corsi" name="corsi">
+            <option value="Gestione infrastrutture cloud">Gestione infrastrutture cloud</option>
+            <option value="Tecniche di Project Management">Tecniche di Project Management</option>
+            <option value="Tecniche di produzione pagine web">Tecniche di produzione pagine web</option>
+            <option value="Assistente familiare">Assistente familiare</option>
+        </select>
+        <br><br>
+        <label for="Titolo di studio">Titolo di studio</label>
+        <select id="Titolo di studio" name="Titolo di studio">
+            <option value="Nessuno">Nessuno</option>
+            <option value="Diploma di maturità">Diploma di maturità</option>
+            <option value="Diploma di tecnico superiore">Diploma di tecnico superiore</option>
+            <option value="Laurea">Laurea</option>
+            <option value="Altro">Altro</option>
+        </select>
+        <input type="text" name="Titolo di studio" id="Titolo di studio" placeholder="Altro..">
+        <br><br>
+        <p>Linguaggio di programmazione preferito:</p>
+        <input type="checkbox" name="check1" id="C" value="C">
+        <label for="C">C</label>
+        <input type="checkbox" name="check2" id="Java" value="Java">
+        <label for="Java">Java</label>
+        <input type="checkbox" name="check3" id="Python" value="Python">
+        <label for="Python">Python</label>
+        <input type="checkbox" name="check4" id="Javascript" value="Javascript">
+        <label for="Javascript">Javascript</label>
+        <br><br>
+        <p>Inserisci il tuo CV:</p>
+        <input type="file" name="CV" id="CV" required>
+        <br><br>
+        <textarea name="commento" rows="10" cols="30"
+            maxlength="500">Aggiungi un tua descrizione professionale...</textarea>
+        <br><br>
+        <input type="submit" value="Candidati">
+    </form>
+</body>
+
+</html>

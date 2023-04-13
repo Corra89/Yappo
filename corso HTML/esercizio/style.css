@@ -1,0 +1,20 @@
+table, th, td{
+    border: 2px solid black;
+    font-size: calc(2vw + 2vh + 2vmin);
+    border-collapse: collapse;} 
+    /* vh o vw = view height o view width
+    per proporzionare la dimensione del testo 
+    alla grandezza dello schermo */
+table{
+    width: 80%;
+    margin: auto;}
+.icona{
+    display: block;
+    margin: auto;
+    width: 100%;}
+.voto{
+    text-align: center;
+    vertical-align: bottom}
+
+tr:nth-child(2n+0) {background-color: aqua;}
+#ott:hover{background-color: chartreuse;}

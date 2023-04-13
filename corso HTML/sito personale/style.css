@@ -1,0 +1,12 @@
+li{display: inline;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: grey;}
+
+ul{
+       position: fixed;
+        top: 0;
+        width: 100%;}
+      

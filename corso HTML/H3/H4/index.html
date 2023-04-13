@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.item1 {grid-area:img;}
+.item2 {grid-area:nome;}
+.item3 {grid-area: cognome ;}
+.item4 {grid-area: icona1;}
+.item5 {grid-area: contatti1;}
+.item6 {grid-area: competenze;}
+.item7 {grid-area: icona2;}
+.item8 {grid-area: contatti2;}
+.item9 {grid-area: html;}
+.item10 {grid-area: voto2;}
+.item11 {grid-area: icona3;}
+.item12{grid-area: contatti3;}
+.item13 {grid-area: css;}
+.item14 {grid-area: voto3;}
+.item15 {grid-area: icona4;}
+.item16 {grid-area: contatti4;}
+.item17 {grid-area: wordpress;}
+.item18 {grid-area: voto4;}
+.item19 {grid-area: icona5;}
+.item20 {grid-area: contatti5;}
+.item21 {grid-area: javascript;}
+.item22 {grid-area: voto5;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'img img img img nome nome '
+    'img img img img nome nome '  
+    'img img img img nome nome '  
+    'img img img img cognome cognome'
+    'img img img img cognome cognome'
+    'img img img img cognome cognome'
+    'icona1 contatti1 contatti1 contatti1 competenze competenze'
+    'icona2 contatti2 contatti2 contatti2 html voto2'
+    'icona3 contatti3 contatti3 contatti3 css voto3'
+    'icona4 contatti4 contatti4 contatti4 wordpress voto4'
+    'icona5 contatti5 contatti5 contatti5 javascript voto5';
+
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.icona{ display: block;
+    margin: auto;
+    width: 50px;}
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"><img type="x-icon" src="../dow.png"></div>
+  <div class="item2">Mario</div>
+  <div class="item3">Rossi</div>  
+  <div class="item4"><img src="../../esercizio/email.jpg" class="icona" type="x-icon"></div>
+  <div class="item5">email</div>
+  <div class="item6">competenze</div>
+  <div class="item7"><img src="../../esercizio/phone.jpg" class="icona" type="x-icon"></div>
+  <div class="item8">telefono</div>
+  <div class="item9">html</div>
+  <div class="item10">voto</div>
+  <div class="item11"><img src="../../esercizio/address.jpg" class="icona" type="x-icon"></div>
+  <div class="item12">indirizzo</div>
+  <div class="item13">css</div>
+  <div class="item14">voto</div>
+  <div class="item15"><img src="../../esercizio/facebook.jpg" class="icona" type="x-icon"></div>
+  <div class="item16">fb</div>
+  <div class="item17">wordpress</div>
+  <div class="item18">voto</div>
+  <div class="item19"><img src="../../esercizio/ista.jpg" class="icona" type="x-icon"></div>
+  <div class="item20">in</div>
+  <div class="item21">javascript</div>
+  <div class="item22">ottimo</div>
+
+
+</div>
+
+</body>
+</html>

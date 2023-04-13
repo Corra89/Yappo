@@ -1,0 +1,27 @@
+caption{
+    caption-side: bottom;
+}
+.classe1{
+    color: aqua;
+}
+#id1{
+    border: 2px solid green;
+}
+table, th, td{
+    border: 1px solid blue;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    width: 80%;
+    text-align: center;
+    background-color: beige;
+    height: 40px;
+}
+table{
+    width: 90%;
+}
+td{
+    padding: 10px;
+}
+

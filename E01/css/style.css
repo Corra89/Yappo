@@ -1,0 +1,10 @@
+h1{text-align: center;font-style: oblique;color: coral;}
+img{width: 100%;font-kerning: auto; border-radius: 4%;} 
+hr{border-color: coral;height: 10 mm;}
+#stalla{opacity: 80%;}
+pre{
+    border: 2px solid powderblue;
+    margin: 1 px;
+    padding: 20 px;
+    }
+  #horse{width: 40mm;height: 40 mm;float: right;}
