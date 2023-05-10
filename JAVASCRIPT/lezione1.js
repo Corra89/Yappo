@@ -135,3 +135,6 @@ else if(lato1 == lato2 || lato1 == lato3 || lato2 == lato3){
 }
 else{console.log("Scaleno")}
 
+// <while> ripete l'azione finchè è vera
+// <for> ripete l'azione fino ad un numero prefissato
+// <foreach> ripete l'azione per la quantità di elementi una lista
