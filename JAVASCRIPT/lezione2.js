@@ -1,4 +1,4 @@
-// ITERAZIONE WHILE
+// INTERAZIONE WHILE
 
 // STAMPARE DA 0 A 10
 
@@ -19,17 +19,18 @@ while(n >= 0){
     n --;
 }
 */
-let i = 11
+
 
 /*
 for(let i = 0; i < 10; i++){
     console.log(i)
 };
+
+(INIZIALIZZAZIONE; CONDIZIONE; AGGIORNAMENTO){
+      ISTRUZIONE DA RIPETERE
+}
 */
-// for(INIZIALIZZAZIONE; CONDIZIONE; AGGIORNAMENTO){
-    //  ISTRUZIONE DA RIPETERE
-// }
-let n = 0
+
 
 /*
 for(let n = 10; n >= 0; n--){
@@ -39,9 +40,35 @@ let array = [1,2,3,4,5,10]
 for(let i = 0; i < array.length; i++){
     console.log(array[i])
 };
-*/
+
+
 let array = [1,2,3,4,5,10]
 for(let i = 0; i < array.length; i++){
-    if(i % 2 == 0)
-    console.log(array[i])
+    if(i % 2 == 0);
+    console.log(array[i]);
 }
+
+for(numero of array){
+    console.log(numero);
+}
+
+
+// STAMPARE I NUMERI PARI DI UN ARRAY
+// DATI DUE ARRAY DI DIMENSIONE UGUALE, CALCOLARE IL VETTORE SOMMA
+
+let array = [1,2,3,4,5,6,7,8,9,10];
+for(numero of array){
+    if(numero % 2 == 0)
+    console.log(numero);
+}
+*/
+ 
+let i = 0
+let array1 = [1,2,3];
+let array2 = [4,5,6];
+let risultato = []
+for(let i = 0; i < array1.length; i++){ 
+console.log
+}
+
+//array1.push(4) istruzione per aggiungere un elemento alla fine di una lista
