@@ -1,0 +1,27 @@
+.testo{
+    width: 100%;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align:auto;
+}
+input{
+    width: 10px;
+    height:10px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    padding: 30px;
+    background: #ff0000;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero{
+    height: 690px;
+    display: flex; width: 100%; align-items: center;
+    background: url(immagineprova.jpg) no-repeat center center;
+    background-size: cover;
+}
