@@ -16,10 +16,7 @@ let nc = maiuscole(nome);
 
 console.log(nc);
 
-let testo = document.getElementById(".testo");
-
-function changeColor(testo, value){
-    document.getElementById(testo).style.color = value;
+function myFunction(){
+  let x= document.getElementById("demo");
+  x.style.color = "red";
 }
-
-
