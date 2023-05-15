@@ -1,8 +1,14 @@
+
 th{
-    font-size: 2.5rem;}
+   font-size:2.5rem;
+}
 table{
     border: 2px solid;
 }
 td{
-        border: 2px solid;
+    border: 2px solid;
+}
+
+.rosso{
+    color:#F00;
 }
