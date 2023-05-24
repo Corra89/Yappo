@@ -2,8 +2,9 @@ let queryUrl = "https://api.openweathermap.org/data/2.5/onecall?";
 let lat = "lat=45.0705&";
 let lon = "lon=7.6868&";
 let apiOptions = "units=metric&exclude=minutely,alerts&";
-let apiKey = "appid=dbb76c5d98d5dbafcb94441c6a10236e";
-let file = queryUrl + lat + lon + apiOptions + apiKey;
+let apiKey = "appid=dbb76c5d98d5dbafcb94441c6a10236e&";
+let lang = "lang=it";
+let file = queryUrl + lat + lon + apiOptions + apiKey + lang;
 
 fetch(file)
 .then((response) => response.json())
@@ -51,18 +52,27 @@ document.getElementById("wrapper-time3").innerHTML = time3;
 document.getElementById("wrapper-time4").innerHTML = time4;
 document.getElementById("wrapper-time5").innerHTML = time5;
 
+// Traduzione
+let traduzione = {
+        "Snow": "Neve", 
+        "Clouds": "Nuvoloso",
+        "Clear": "Soleggiato",
+        "Fog": "Nebbia",
+        "Rain": "Pioggia",
+        "Thunderstorm": "Tempesta"};
+
 // Weather daily data
 let tomorrowTemp = Math.round(data.daily[0].temp.day);
 let dATTemp = Math.round(data.daily[1].temp.day);
 let tomorrowMain = data.daily[0].weather[0].main;
 let dATTempMain = data.daily[1].weather[0].main;
 
-document.getElementById("wrapper-forecast-temp-today").innerHTML =
-temp + "°";
+document.getElementById("wrapper-forecast-temp-today").innerHTML = 
+traduzione[main] + " " + temp + "°";
 document.getElementById("wrapper-forecast-temp-tomorrow").innerHTML =
-tomorrowTemp + "°";
+traduzione[tomorrowMain] + " " + tomorrowTemp + "°";
 document.getElementById("wrapper-forecast-temp-dAT").innerHTML =
-dATTemp + "°";
+traduzione[dATTempMain] + " " + dATTemp + "°";
 
 // Icons
 let iconBaseUrl = "http://openweathermap.org/img/wn/";
@@ -141,6 +151,7 @@ break;
 case "Clear":
 document.getElementById("wrapper-bg").style.backgroundImage =
 "url('https://mdbgo.io/ascensus/mdb-advanced/img/clear.gif')";
+document.getElementById("wrapper-bg").classList.add("assolato");
 break;
 case "Thunderstorm":
 document.getElementById("wrapper-bg").style.backgroundImage =
@@ -149,6 +160,9 @@ break;
 default:
 document.getElementById("wrapper-bg").style.backgroundImage =
 "url('https://mdbgo.io/ascensus/mdb-advanced/img/clear.gif')";
+document.getElementById("wrapper-bg").classList.add("assolato");
 break;
 }
 });
+
+
