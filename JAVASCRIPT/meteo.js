@@ -13,13 +13,14 @@ fetch(file)
 let main = data.current.weather[0].main;
 let description = data.current.weather[0].description;
 let temp = Math.round(data.current.temp);
-let pressure = data.current.pressure;
+//let temp_min = Math.round(data.daily.temp.min);
+let wind_speed = data.current.wind_speed;
 let humidity = data.current.humidity;
 let name = "Torino";
 
 document.getElementById("wrapper-description").innerHTML = description;
 document.getElementById("wrapper-temp").innerHTML = temp + "°C";
-document.getElementById("wrapper-pressure").innerHTML = pressure;
+document.getElementById("wrapper-wind_speed").innerHTML = wind_speed + " m/s";
 document.getElementById("wrapper-humidity").innerHTML = humidity + "%";
 document.getElementById("wrapper-name").innerHTML = name;
 
@@ -46,11 +47,11 @@ let time3 = time2 + 1;
 let time4 = time3 + 1;
 let time5 = time4 + 1;
 
-document.getElementById("wrapper-time1").innerHTML = time1;
-document.getElementById("wrapper-time2").innerHTML = time2;
-document.getElementById("wrapper-time3").innerHTML = time3;
-document.getElementById("wrapper-time4").innerHTML = time4;
-document.getElementById("wrapper-time5").innerHTML = time5;
+document.getElementById("wrapper-time1").innerHTML = "h " + time1;
+document.getElementById("wrapper-time2").innerHTML = "h " + time2;
+document.getElementById("wrapper-time3").innerHTML = "h " + time3;
+document.getElementById("wrapper-time4").innerHTML = "h " + time4;
+document.getElementById("wrapper-time5").innerHTML = "h " + time5;
 
 // Traduzione
 let traduzione = {
@@ -59,7 +60,9 @@ let traduzione = {
         "Clear": "Soleggiato",
         "Fog": "Nebbia",
         "Rain": "Pioggia",
-        "Thunderstorm": "Tempesta"};
+        "Thunderstorm": "Tempesta",
+        "Mist": "Foschia"
+    };
 
 // Weather daily data
 let tomorrowTemp = Math.round(data.daily[0].temp.day);
@@ -112,7 +115,7 @@ document.getElementById("wrapper-icon-hour1").src = iconFullyUrlHour1;
 // Hour2
 let iconHour2 = data.hourly[2].weather[0].icon;
 let iconFullyUrlHour2 = iconBaseUrl + iconHour2 + iconFormat;
-document.getElementById("wrapper-icon-hour2").src = iconFullyUrlHour1;
+document.getElementById("wrapper-icon-hour2").src = iconFullyUrlHour2;
 
 // Hour3
 let iconHour3 = data.hourly[3].weather[0].icon;
