@@ -16,7 +16,8 @@
  }
 
 @media (max-with: 768px){
-
-    
-
-}
+    #mediatemp{
+        padding-bottom: 40px;
+    }
+        
+    }

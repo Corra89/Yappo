@@ -18,6 +18,8 @@ let wind_speed = data.current.wind_speed;
 let humidity = data.current.humidity;
 let name = "Torino";
 
+console.log(data);
+
 document.getElementById("wrapper-description").innerHTML = description;
 document.getElementById("wrapper-temp").innerHTML = temp + "°C";
 document.getElementById("wrapper-wind_speed").innerHTML = wind_speed + " m/s";
