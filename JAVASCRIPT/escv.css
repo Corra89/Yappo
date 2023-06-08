@@ -1,161 +1,208 @@
-/* Define styles for the header */
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
   
-  /* Define styles for the navigation bar */
   nav {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
   }
   
   nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   }
   
   nav li {
-    margin-right: 1rem;
+  margin-right: 1rem;
   }
   
   nav a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
   }
   
-  /* Define styles for the main section */
+  nav a:hover {
+  background-color: #0069d9;
+  }
+  
   main {
-    padding: 1rem;
+  padding: 1rem;
   }
   
-  /* Define styles for the new experience form */
   #form-esperienza-lavorativa {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    padding: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 1rem;
+  border-radius: 5px;
   }
   
   #form-esperienza-lavorativa label {
-    display: block;
-    margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
   }
   
   #form-esperienza-lavorativa input,
   #form-esperienza-lavorativa textarea {
-    display: block;
-    margin-bottom: 1rem;
-    width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
   }
   
   #form-esperienza-lavorativa button {
-    background-color: #007bff;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
   }
   
   #form-esperienza-lavorativa button:hover {
-    background-color: #0069d9;
+  background-color: #0069d9;
   }
   
-  /* Define styles for the footer */
   footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #dee2e6;
-    padding: 1rem;
-    text-align: center;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 1rem;
+  text-align: center;
   }
   
-  /* Define responsive styles */
   @media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-    }
-  
-    nav ul {
-      margin-top: 1rem;
-    }
-  
-    nav li {
-      margin-right: 0;
-      margin-bottom: 0.5rem;
-    }
-  
-    main {
-      padding: 1rem;
-    }
-  
-    #form-esperienza-lavorativa {
-      padding: 1rem;
-    }
+  nav {
+  flex-direction: column;
   }
-  /* Define styles for the education section */
-#formazione {
-    background-color: #f8f9fa;
-    padding: 1rem;
+  
+  nav ul {
+  margin-top: 1rem;
+  }
+  
+  nav li {
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  }
+  
+  main {
+  padding: 1rem;
+  }
+  
+  #form-esperienza-lavorativa {
+  padding: 1rem;
+  }
+  }
+  
+  #formazione {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
   }
   
   #formazione h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
   }
   
   #formazione h3 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
   }
   
   #formazione p {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
   }
   
   #formazione ul {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
   }
   
   #formazione li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   }
   
-  /* Define styles for the work experience section */
   #esperienze-lavorative {
-    background-color: #f8f9fa;
-    padding: 1rem;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
   }
   
   #esperienze-lavorative h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
   }
-  
-  #esperienze-lavorative.card {
-    margin-bottom: 1rem;
-  }
-  
   #esperienze-lavorative.card-body {
     padding: 1rem;
-  }
-  
-  #esperienze-lavorative h3 {
+    }
+    
+    #esperienze-lavorative h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-  }
-  
-  #esperienze-lavorative p {
+    font-size: 1.5rem;
+    }
+    
+    #esperienze-lavorative p {
     margin-bottom: 0.5rem;
-  }
-  
-  #esperienze-lavorative ul {
+    font-size: 1.2rem;
+    }
+    
+    #esperienze-lavorative ul {
     margin-bottom: 1rem;
-  }
-  
-  #esperienze-lavorative li {
+    font-size: 1.2rem;
+    }
+    
+    #esperienze-lavorative li {
     margin-bottom: 0.5rem;
-  }
+    font-size: 1.2rem;
+    }
+    
+    #current-weather {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4483b8;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    font-size: 24px;
+    animation: border-color 1s ease-in-out infinite;
+    }
+    
+    @keyframes border-color {
+    0% {
+    border-color: #ccc;
+    }
+    50% {
+    border-color: rgb(231, 247, 12);
+    }
+    100% {
+    border-color: #070707;
+    }
+    }

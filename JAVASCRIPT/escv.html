@@ -3,67 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae</title>
-  <!-- Bootstrap CSS -->
-  <link href="escv.css" rel="stylesheet">
+  <title>Curriculum Vitae Bruce Wayne</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="escv.css" rel="stylesheet">
+  <link rel="shortcut icon" href="download.png" type="image/x-icon">
 </head>
 <body>
-  <!-- Header -->
+
   <header>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-            <img src="pallina.jpeg" alt="Immagine del profilo" class="img-fluid rounded-circle">
+            <img src="Bruce_Wayne.webp" alt="Immagine del profilo" class="img-fluid rounded-circle">
         </div>
         <div class="col-md-6">
-          <h1>Nome Cognome</h1>
-          <p>Città, Stato</p>
-          <p>Cellulare: xxxxxxxx</p>
-          <p>Email: nomecognome@email.com</p>
+          <h1>Bruce Wayne</h1>
+          <p>Aka Not Batman</p>
+          <p>1007 Mountain Drive</p>
+          <p>Gotham City</p>
+          <p>Preferred Method of Contact: Bat Signal</p>
         </div>
       </div>
     </div>
+    <div id="current-weather">
+    </div>
   </header>
 
-  <!-- Formazione scolastica -->
   <section>
     <div class="container">
       <h2>Formazione scolastica</h2>
       <div class="row">
         <div class="col-md-6">
           <h3>Istituto</h3>
-          <p>Nome dell'istituto</p>
-          <p>Anno di gradimento: xxxx</p>
-          <p>Certificazioni:
+          <p>Alfred Institute</p>
+          <p>Anno di gradimento: 1992</p>
+          <p>Obbiettivi raggiunti:
             <ul>
-              <li>Certificato di maturità per la formazione a distanza</li>
-              <li>Certificato di partecipazione a corsi e workshop</li>
+              <li>Arti marziali: 90/100</li>
+              <li>Tiro con l'arco: 87/100</li>
+              <li>Scienza Applicata: 90/100</li>
+              <li>Memoria Visiva: 70/100</li>
             </ul>
           </p>
         </div>
         <div class="col-md-6">
-          <h3>Certificazioni</h3>
+          <h3>Certificazioni post-Alfred</h3>
           <ul>
-            <li>Certificato di maturità per la formazione a distanza</li>
-            <li>Certificato di partecipazione a corsi e workshop</li>
+            <li>Membro della League of Shadows e della Justice League of AmericaMajor</li>
+            <li>Combattimento corpo a corpo</li>
+            <li>Arte dell'invisibilità</li>
+            <li>Ridimensionamento dei muri</li>
+            <li>Lancio di proiettili</li>
+            <li>Combattimento non letale</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Esperienze lavorative -->
   <section>
     <div class="container">
       <h2>Esperienze lavorative</h2>
       <div class="row" id="esperienze-lavorative">
-        <!-- Questo sarà popolato con JavaScript -->
       </div>
     </div>
   </section>
 
-  <!-- Form per inserire una nuova esperienza lavorativa -->
   <section>
     <div class="container">
       <h2>Aggiungi una nuova esperienza lavorativa</h2>
@@ -73,8 +78,12 @@
           <input type="text" class="form-control" id="azienda" name="azienda" required>
         </div>
         <div class="form-group">
-          <label for="ruolo">Ruolo</label>
+          <label for="ruolo">Titolo</label>
           <input type="text" class="form-control" id="ruolo" name="ruolo" required>
+        </div>
+        <div class="form-group">
+          <label for="luogo">Luogo</label>
+          <input type="text" class="form-control" id="luogo" name="luogo" required>
         </div>
         <div class="form-group">
           <label for="data-inizio">Data di inizio</label>

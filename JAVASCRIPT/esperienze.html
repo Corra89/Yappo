@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae Bruce Wayne</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="escv.css" rel="stylesheet">
+  <link rel="shortcut icon" href="download.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <img src="Bruce_Wayne.webp" alt="Immagine del profilo" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-6">
+          <h1>Bruce Wayne</h1>
+          <p>Aka Not Batman</p>
+          <p>1007 Mountain Drive</p>
+          <p>Gotham City</p>
+          <p>Preferred Method of Contact: Bat Signal</p>
+        </div>
+      </div>
+    </div>
+    <div id="current-weather">
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Formazione scolastica</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Istituto</h3>
+          <p>Alfred Institute</p>
+          <p>Anno di gradimento: 1992</p>
+          <p>Obbiettivi raggiunti:
+            <ul>
+              <li>Arti marziali: 90/100</li>
+              <li>Tiro con l'arco: 87/100</li>
+              <li>Scienza Applicata: 90/100</li>
+              <li>Memoria Visiva: 70/100</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3>Certificazioni post-Alfred</h3>
+          <ul>
+            <li>Membro della League of Shadows e della Justice League of AmericaMajor</li>
+            <li>Combattimento corpo a corpo</li>
+            <li>Arte dell'invisibilità</li>
+            <li>Ridimensionamento dei muri</li>
+            <li>Lancio di proiettili</li>
+            <li>Combattimento non letale</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Esperienze lavorative</h2>
+      <div class="row" id="esperienze-lavorative">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Aggiungi una nuova esperienza lavorativa</h2>
+      <form id="form-esperienza-lavorativa">
+        <div class="form-group">
+          <label for="azienda">Azienda</label>
+          <input type="text" class="form-control" id="azienda" name="azienda" required>
+        </div>
+        <div class="form-group">
+          <label for="ruolo">Titolo</label>
+          <input type="text" class="form-control" id="ruolo" name="ruolo" required>
+        </div>
+        <div class="form-group">
+          <label for="luogo">Luogo</label>
+          <input type="text" class="form-control" id="luogo" name="luogo" required>
+        </div>
+        <div class="form-group">
+          <label for="data-inizio">Data di inizio</label>
+          <input type="date" class="form-control" id="data-inizio" name="data-inizio" required>
+        </div>
+        <div class="form-group">
+          <label for="data-fine">Data di fine</label>
+          <input type="date" class="form-control" id="data-fine" name="data-fine">
+        </div>
+        <button type="submit" class="btn btn-primary">Aggiungi</button>
+      </form>
+    </div>
+  </section>
+    <script src="escv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><script>
+</script>
+</body>
+</html>
