@@ -1,0 +1,161 @@
+/* Define styles for the header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  /* Define styles for the navigation bar */
+  nav {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Define styles for the main section */
+  main {
+    padding: 1rem;
+  }
+  
+  /* Define styles for the new experience form */
+  #form-esperienza-lavorativa {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+  }
+  
+  #form-esperienza-lavorativa label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #form-esperienza-lavorativa input,
+  #form-esperienza-lavorativa textarea {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  #form-esperienza-lavorativa button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+  }
+  
+  #form-esperienza-lavorativa button:hover {
+    background-color: #0069d9;
+  }
+  
+  /* Define styles for the footer */
+  footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Define responsive styles */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      margin-top: 1rem;
+    }
+  
+    nav li {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  
+    #form-esperienza-lavorativa {
+      padding: 1rem;
+    }
+  }
+  /* Define styles for the education section */
+#formazione {
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  #formazione h2 {
+    margin-bottom: 1rem;
+  }
+  
+  #formazione h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #formazione p {
+    margin-bottom: 0.5rem;
+  }
+  
+  #formazione ul {
+    margin-bottom: 1rem;
+  }
+  
+  #formazione li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Define styles for the work experience section */
+  #esperienze-lavorative {
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  #esperienze-lavorative h2 {
+    margin-bottom: 1rem;
+  }
+  
+  #esperienze-lavorative.card {
+    margin-bottom: 1rem;
+  }
+  
+  #esperienze-lavorative.card-body {
+    padding: 1rem;
+  }
+  
+  #esperienze-lavorative h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  #esperienze-lavorative p {
+    margin-bottom: 0.5rem;
+  }
+  
+  #esperienze-lavorative ul {
+    margin-bottom: 1rem;
+  }
+  
+  #esperienze-lavorative li {
+    margin-bottom: 0.5rem;
+  }

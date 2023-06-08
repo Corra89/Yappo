@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Filtro dei nomi</title>
+    
+    <style>
+        body {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+       .jumbotron {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+       .card-title {
+            color: #007bff;
+        }
+       .btn-outline-primary {
+            color: #007bff;
+            border-color: #007bff;
+        }
+       .btn-outline-primary:hover {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .fantasy {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #00ff00, #00ffff, #0000ff, #8000ff, #ff00ff, #ff0000);
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-3">
+
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Filtro dei nomi</h1>
+            <p class="lead">Inserisci l'iniziale del nome e premi "Filtra" per visualizzare i nomi che iniziano con quella lettera.</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Filtra per</label>
+            <input type="text" class="form-control" id="inizialeText" placeholder="Scrivi qui l'iniziale">
+            <button type="button" class="btn btn-outline-primary float-end" onclick="filtro()">Filtra</button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+              <hr class="fantasy">
+            </div>
+          </div>
+
+        <div id="contenitore-card">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                </div>
+            </div>
+
+        </div>
+
+
+      </div>
+
+
+    <script src="esercizio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
